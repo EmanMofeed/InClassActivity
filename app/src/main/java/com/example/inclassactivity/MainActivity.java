@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         String title = bookTitle.getText().toString();
         String author = authorName.getText().toString();
         int page =Integer.parseInt(pages.getText().toString());
-        boolean isSelected = switch1.isSelected();
+        boolean isSelected = switch1.isChecked();
         books.add(new Book(title,author,page,isSelected));
 
     }
